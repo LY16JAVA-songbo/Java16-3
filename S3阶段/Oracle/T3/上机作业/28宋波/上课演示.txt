@@ -1,0 +1,46 @@
+DRIVER="oracle.jdbc.driver.OracleDriver"
+URL="jdbc:oracle:thin:@127.0.0.1:1521:orcl"
+
+create table 表名(
+	列名 数据类型 特征,
+	列名 数据类型 特征
+)
+
+insert into 表名(列名,列名) values(值,值)
+delete from 表名
+update 表名 set 列名=新值,列名=新值
+select * from 表名
+
+where 列名=值 and or
+group by 列名,列名
+having 
+order by 列名 asc|desc ,列名 asc|desc
+
+
+count()
+max()
+min()
+avg()
+sum()
+
+like '%张%' '张_'
+
+联接查询:
+内联：
+   select * from 表名,表名 where	所有表之间的主外键关系
+   select * from 表名 inner join 表名 on 所有表之间的主外键关系
+	
+外联：
+   select * from student left join score on 所有表之间的主外键关系
+
+子查询:
+ in ,not in
+
+
+
+约束
+检查约束：CK_表名_列名
+唯一：UQ
+默认：DF
+主键：PK
+外键：FK
